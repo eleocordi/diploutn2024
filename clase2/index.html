@@ -7,11 +7,21 @@
   </head>
   <body>
     <header>
-      <!--Encabezado
--->
       <h1>Encabezado nivel 1</h1>
+
+      <nav>
+        <ul>
+       <li><a href="#nombre">Nombre</a> </li>
+        <li><a href="#bio">Mini Bio</a></li>
+        <li><a href="#objetivos">Objetivos del Curso</a></li>
+        <li><a href="#multimedia">Multimedia en Html</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#footer">Footer</a></li>
+      </ul>
+      </nav>
     </header>
-    <h2>Eleonora Cordiviola</h2>
+
+    <h2 id="nombre">Eleonora Cordiviola</h2>
     <h3>Mini Bio</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur
@@ -19,13 +29,13 @@
       perspiciatis enim accusantium! Minima commodi expedita neque sapiente
       consequatur eveniet!
     </p>
-    <h3>Objetivos del Curso</h3>
+    <h3 id="objetivos">Objetivos del Curso</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
       asperiores numquam officia odit impedit nemo, molestias dolore vel at rem
       minima. Facere vero officiis rerum sunt quia odit aliquam expedita.
     </p>
-    <h3>Multimedia en html</h3>
+    <h3 id="multimedia">Multimedia en html</h3>
 
     <div>
       <video width="640" height="360" controls>
@@ -33,7 +43,11 @@
         <source src="./videos/203315-920603050_tiny.mp4" type="video/webm" />
       </video>
     </div>
-    <audio autoplay src="./audio/large-underwater-explosion-190270.mp3" controls></audio>
+    <audio
+      autoplay
+      src="./audio/large-underwater-explosion-190270.mp3"
+      controls
+    ></audio>
     <div>
       <img src="./imagenes/harry.png" alt="Logo Harry Potter" />
     </div>
@@ -50,7 +64,7 @@
       ></iframe>
     </div>
     <hr />
-    <h4>Listas</h4>
+    <h4 id="listas">Listas</h4>
     <h5>Para preparar un mate</h5>
     <ol>
       <li>Llenar un termo con agua caliente.</li>
@@ -60,16 +74,16 @@
       <li>Cebar.</li>
     </ol>
     <h5>Nombres</h5>
-    <nav>
-      <ul>
-        <li>Eleonora</li>
-        <li>Veronica</li>
-        <li>Pablo</li>
-        <li>Jorge</li>
-        <li>Leonardo</li>
-      </ul>
-    </nav>
-    <footer>
+
+    <ul>
+      <li>Eleonora</li>
+      <li>Veronica</li>
+      <li>Pablo</li>
+      <li>Jorge</li>
+      <li>Leonardo</li>
+    </ul>
+
+    <footer id="footer">
       <div>
         <h6>Tarea Realizada por @eleocordi</h6>
       </div>
