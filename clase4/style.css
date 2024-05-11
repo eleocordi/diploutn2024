@@ -1,19 +1,53 @@
+body {
+  background-color: beige;
+}
 .navegacion {
-  background-color: antiquewhite;
+  background-color: rgb(211, 128, 20);
   font-weight: bold;
+  height: 80px;
 }
 .navegacion li {
   background-color: #e7d4bb;
   display: inline;
-  padding: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 20px;
+  float: right;
+}
+.contenedor {
+  display: inline-block;
+  background-color: green;
+  width: 100%;
 }
 .box-model {
   background-color: rgb(190, 241, 241);
   width: 250px;
-  height:150px;
+  height: 150px;
   padding: 10px 40px 30px 10px;
   margin: 10px 40px;
   border: solid 5px rgb(243, 187, 187);
   border-radius: 5px;
   overflow: scroll;
+float: right;
+}
+
+.box-model2 {
+  background-color: rgb(34, 63, 151);
+  width: 250px;
+  height: 150px;
+  padding: 10px 40px 30px 10px;
+  margin: 10px 40px;
+  border: solid 5px rgb(206, 143, 143);
+  border-radius: 5px;
+  overflow: scroll;
+  
+}
+
+.aside {
+  background-color: orange;
+  border: double 5px rgb(198, 130, 3);
+  width: auto;
+  height: auto;
+  padding: 20px;
+  margin: auto;
 }
