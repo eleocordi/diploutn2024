@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+height: 80px;
+}
+.logo {
+  background-color: burlywood;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+  background-color: rgb(230, 135, 11);
+  width: 60%;
+  justify-content: space-evenly;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+justify-content: space-around;
+align-items: center;
+}
+.login {
+  background-color: rgb(215, 154, 75);
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor_padre {
+  background-color: rgb(249, 235, 218);
+  display: flex;
+}
+.caja {
+  height: 150px;
+  width: 150px;
+}
+.pink {
+  background-color: rgb(251, 212, 218);
+}
+.lightblue {
+  background-color: lightblue;
+}
+.grey {
+  background-color: rgba(128, 128, 128, 0.523);
+}
+.green {
+  background-color: rgba(128, 245, 128, 0.611);
+}
+.beige {
+  background-color: rgb(227, 227, 156);
+}
+.red {
+  background-color: rgba(202, 45, 45, 0.593);
+  
+}

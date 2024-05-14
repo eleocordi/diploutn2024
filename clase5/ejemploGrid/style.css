@@ -1,0 +1,77 @@
+/*Grid explícito
+
+.grid-container{
+    display: grid;
+    background-color: rgb(150, 203, 249);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,115px);
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.producto{
+    background-color: rgb(233, 231, 231);
+    padding: 2rem;
+    border:1px solid rgba(0, 0, 0, 0.357);
+    box-shadow: 2px 2px ;
+
+}*/
+/*Grid por áreas*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav producto publicidad"
+    "nav servicio publicidad"
+    "nav footer footer";
+  height: 100vh;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  grid-template-columns: 25% auto 15%;
+  background-color: chartreuse;
+}
+.borde{
+    border: solid 1px gold;
+}
+.header {
+  background-color: rgb(220, 192, 246);
+  grid-area: header;
+  
+}
+
+nav {
+  background-color: rgb(247, 216, 158);
+  grid-area: nav;
+  
+}
+footer {
+  background-color: rgb(243, 217, 184);
+  grid-area: footer;
+}
+aside {
+  background-color: rgb(234, 231, 231);
+  grid-area: publicidad;
+}
+#productos {
+  background-color: aquamarine;
+  grid-area: producto;
+}
+#servicios {
+  background-color: rgb(210, 172, 218);
+  grid-area: servicio;
+}
+
+section p{
+    font-size: 1.5rem;
+}
