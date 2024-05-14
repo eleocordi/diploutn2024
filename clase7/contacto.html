@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xyyrvpnj"  method="post" class="formulario">
+                <fieldset class="fieldset">
+                    <legend class="legend">Información del Contacto</legend>
+                    <div class="form_group">
+                        <label for="nombre" class="label">Nombre</label>
+                        <input type="text" class="input" name="nombre" id="nombre" required />
+                    </div>
+
+                    <div class="form_group">
+                        <label for="apellido" class="label">Apellido</label>
+                        <input type="text" class="input" name="apellido" id="apellido" />
+                    </div>
+                    <div class="form_group">
+                        <label for="edad" class="label">Edad</label>
+                        <input type="number" name="edad" id="edad" min="18" max="99" />
+                    </div>
+                    <div class="form_group">
+                        <label for="clave" class="label">Contraseña</label>
+                        <input type="password"  name="clave" id="clave" />
+                    </div>
+                    <div class="form_group">
+                        <label for="mensaje" class="label">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="5" cols="10" minlength="10"
+                            maxlength="200"></textarea>
+                    </div>
+                    <div class="form_group">
+                        <p>Introduce tu Página Web</p>
+                        <input type="url" class="input" name="sitioWeb" pattern="https?://.+"
+                            title="Por favor, ingrese una URL válida" />
+                    </div>
+                    <div class="form_group">
+                        <p>Selecciona tu País de Procedencia</p>
+                        <select name="pais" id="">
+                            <option value="A">Argentina</option>
+                            <option value="B">Bolivia</option>
+                            <option value="C">Chile</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <p>Selecciona tu Color Favorito</p>
+
+                        <input type="radio" name="color" value="rojo" />
+                        <label for="rojo">Rojo</label>
+
+                        <input type="radio" name="color" value="azul" />
+                        <label for="azul">Azul</label>
+
+                        <input type="radio" name="color" value="amarillo" />
+                        <label for="amarillo">Amarillo</label>
+                    </div>
+                    <div class="form_group">
+                        <p>Selecciona tu Nivel de Educación Alcanzado</p>
+                        <input type="checkbox" />
+                        <label for="secundario">Secundario</label>
+                        <input type="checkbox" />
+                        <label for="terciario">Terciario</label>
+                        <input type="checkbox" />
+                        <label for="universitario">Universitario</label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" class="submit_enviar" value="Enviar formulario" />
+            </form>
+        </section>
+    </header>
+</body>
+
+</html>
