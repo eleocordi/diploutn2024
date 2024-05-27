@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vivero Demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container-fluid bg-warning d-flex justify-content-center">
+        <p class="text-bs-warning-text-emphasis mb-0 p-2 fs-6">Contactanos +00 (000)-000-000</p>
+
+    </header>
+    <!-- Menú Navegación -->
+    <nav class="navbar navbar-expand-lg bg-warning-subtle p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/LogoVO.jpg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top m-1">
+                <span class="text-warning fs-2 fw-bold">VIVERO ONLINE</span> </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-warning fs-6 fw-bold" href="#">Plantas Interior</a></li>
+                            <li><a class="dropdown-item text-warning fs-6 fw-bold" href="#">Macetas</a></li>
+                            <li><a class="dropdown-item  text-warning fs-6 fw-bold" href="#">Sustratos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Introduce tu busqueda"
+                        aria-label="Search">
+                    <button class="btn btn-warning btn-warning-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Carrusel -->
+   
+    <div id="carouselExampleCaptions" class="carousel slide p-3">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./images/p1-interior.jpg" class="d-block w-100" alt="Planta de Interior...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-warning fs-3 fw-bold">Plantas de Interior</h5>
+                    <p class="text-warning">Contamos con una gran variedad de Plantas de Interior</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./images/s1-sustrato.jpg" class="d-block w-100" alt="Sustratos">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-warning fs-3 fw-bold">Sustratos</h5>
+                    <p class="text-warning">Contamos con una gran variedad de Sustratos Orgánicos</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./images/m2-arbustos.jpg" class="d-block w-100" alt="Macetas">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-warning fs-3 fw-bold"">Macetas</h5>
+                    <p class="text-warning">Contamos con una gran variedad de Macetas</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previa</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+<section class="w-50 mx-auto text-center pt-5">
+    <h1 class="p-3 fs-2 border-top border-3"> <span class="text-warning">Vivero Online</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+    <p class="p-3 fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum distinctio deserunt temporibus delectus atque, deleniti soluta nulla esse aliquam sequi nam quod modi sed minima, eveniet corrupti similique pariatur!</p>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
