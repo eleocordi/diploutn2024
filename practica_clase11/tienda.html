@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Tienda Vivero Orange</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="container-fluid bg-warning d-flex justify-content-center">
+    <p class="text-warning-emphasis mb-0 p-2 fs-6">
+      Viví el Jardín de tus Sueños | Contactanos +00 (000)-000-000
+    </p>
+  </header>
+  <!-- Menú Navegación -->
+  <nav class="navbar navbar-expand-lg bg-warning-subtle p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/LogoVo.png" alt="Logo" class="d-inline-block align-text-top
+         logo mx-1" />
+        <span class="text-warning align-text-top fs-2 fw-bold name">Vivero Orange</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html #seccion-servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=" ./index #seccion-contacto">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-warning fs-6 fw-bold" href="#">Plantas</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-warning fs-6 fw-bold" href="#">Macetas</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-warning fs-6 fw-bold" href="#">Sustratos</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 shadow-sm" type="search" placeholder="Introduce tu busqueda"
+            aria-label="Search" />
+          <button class="btn btn-warning btn-warning-outline-success" type="submit">
+            Buscar
+          </button>
+        </form>
+        <div class="text-warning  fs-2 m-3"><i class="bi bi-cart "></i></div>
+
+      </div>
+    </div>
+  </nav>
+  <div>
+    <div class="envios text-warning-emphasis p-2">
+      <p class="bg-white">RECIBÍ EL PEDIDO EN TU HOGAR O RETIRALO EN NUESTRO LOCAL</p>
+      <p>Te contactaremos por WhatsApp desde el Sector de ENVÍOS para coordinar la entrega del pedido</p>
+      <p>Tiempo de entrega 1 a 3 días hábiles</p>
+      <p>Atención Virtual: Lunes a Sábado de 10 a 18 hs.</p>
+    </div>
+    <!-- Acordion con cartas, foto, descripción y botón para cargar en carrito -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item ">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-warning text-warning-emphasis" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <strong>Plantas</strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- cartas  plantas-->
+            <div class="row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <img src="./images/m1-orquides.jpg" class="card-img-top" alt="Violeta de los Alpes">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-warning"> <strong>Violeta de los Alpes</strong></h5>
+                    <p class="card-text">Planta de Exterior. Media Sombra. Mix Colores</p>
+                    <p class="card-text fw-bold mb-2">Cantidad</p>
+                    <select name="cantidad" class="mb-2">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <!-- Agrega más opciones según tus necesidades -->
+                    </select>
+                    <p class="card-text fw-bold"> $5.300</p> <a href="#" class="btn btn-warning text-white">Agregar al
+                      Carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <img src="./images/f1-flor.jpg" class="card-img-top" alt="Estrella Federal">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-warning"> <strong>Estrella Federal</strong></h5>
+                    <p class="card-text">Planta de Exterior. Media Sombra.</p>
+                    <!-- TODO agregar selector de cantidad-->
+                    <p class="card-text"> <strong>$6.900</strong></p> <a href="#"
+                      class="btn btn-warning text-white">Agregar al Carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-warning text-warning-emphasis " type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong>Macetas</strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- cartas macetas-->
+            <div class="row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <img src="./images/p2-interior.jpg" class="card-img-top" alt="Cilindro Fibrocemento">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-warning"> <strong>Cilindro Fibrocemento</strong></h5>
+                    <p class="card-text">Color Gris. Mix Tamaños</p>
+                    <!-- TODO agregar selector de cantidad-->
+                    <p class="card-text"> <strong>$14.500</strong></p> <a href="#"
+                      class="btn btn-warning text-white">Agregar al Carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <img src="./images/p3-interior.jpg" class="card-img-top" alt="Cubo Rotomodelado">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-warning"> <strong>Cubo Rotomoldeado</strong></h5>
+                    <p class="card-text">Mix Colores. Mix Tamaños.</p>
+                    <!-- TODO agregar selector de cantidad-->
+                    <p class="card-text"> <strong>$13.000</strong></p> <a href="#"
+                      class="btn btn-warning text-white">Agregar al Carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed bg-warning text-warning-emphasis" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+            aria-controls="collapseThree">
+            <strong>Sustratos</strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- cartas -->
+            <div class="row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <img src="./images/s2-sustrato.jpg" class="card-img-top" alt="Humus de Lombriz">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-warning"> <strong>Humus de Lombriz</strong></h5>
+                    <p class="card-text"> Nutrientes. Tamaño 2 litros.</p>
+                    <!-- TODO agregar selector de cantidad-->
+                    <p class="card-text"> <strong>$1.300</strong></p> <a href="#"
+                      class="btn btn-warning text-white">Agregar al Carrito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <img src="./images/s3-sustrato.jpg" class="card-img-top" alt="Pometina">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-warning"> <strong>Pometina</strong></h5>
+                    <p class="card-text"> Filtrante Natural. Tamaño 3 litros.</p>
+                    <!-- TODO agregar selector de cantidad-->
+                    <p class="card-text"> <strong>$1.600</strong></p> <a href="#"
+                      class="btn btn-warning text-white">Agregar al Carrito</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="grilla">
+      <div id="infoVenta" >
+        <i class="bi bi-whatsapp"></i>
+        <p>SERVICIO AL CLIENTE</p>
+        <P>Atención personalizada a cargo de Profesionales</P>
+        </div>
+      <div id="infoEnvio" >
+        <i class="bi bi-truck"></i>
+        <p>ENVÍOS A DOMICILIO</p>
+        <P>Contacto vía WhatsApp para coordinar la entrega</P>
+
+      </div>
+      <div id="infoPostVenta">
+        <i class="bi bi-person-raised-hand"></i>
+        <p>POST VENTA</p>
+        <P>Garantía de solución total de inconvenientes</P>
+      </div>
+    </div>
+
+
+
+    <footer class="w-100 bg-warning-subtle flex-column text-center">
+      <div id="iconos" class="fs-2 pt-2">
+        <a href="#"><i class="bi bi-twitter-x text-warning text-opacity-75"></i></a>
+        <a href="#"><i class="bi bi-facebook text-warning text-opacity-75"></i></a>
+        <a href="#"><i class="bi bi-instagram text-warning text-opacity-75"></i></a>
+      </div>
+      <div>
+        <p class="fs-5 px-3 pt-3 text-warning-emphasis">
+          Vivero Orange &copy; Todos los Derechos Reservados 2024
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

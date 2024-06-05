@@ -1,29 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vivero Demo</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vivero Orange</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
     <!-- header -->
     <header class="container-fluid bg-warning d-flex justify-content-center">
-        <p class="text-bs-warning-text-emphasis mb-0 p-2 fs-6">Contactanos +00 (000)-000-000</p>
-
+        <p class="text-warning-emphasis mb-0 p-2 fs-6 animate__heartBeat">
+            Viví el Jardín de tus Sueños | Contactanos +00 (000)-000-000
+        </p>
     </header>
     <!-- Menú Navegación -->
     <nav class="navbar navbar-expand-lg bg-warning-subtle p-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./images/LogoVO.jpg" alt="Logo" width="30" height="24"
-                    class="d-inline-block align-text-top m-1">
-                <span class="text-warning fs-2 fw-bold">VIVERO ONLINE</span> </a>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/VoLogo.png" alt="Logo" class="d-inline-block align-text-top logo mx-1" />
+                <span class="text-warning align-text-top fs-2 fw-bold name">Vivero Orange</span>
+            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,34 +37,48 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seccion-contacto">Contacto</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="/practica_clase11/tienda.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Productos
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-warning fs-6 fw-bold" href="#">Plantas Interior</a></li>
-                            <li><a class="dropdown-item text-warning fs-6 fw-bold" href="#">Macetas</a></li>
-                            <li><a class="dropdown-item  text-warning fs-6 fw-bold" href="#">Sustratos</a></li>
+                            <li>
+                                <a class="dropdown-item text-warning fs-6 fw-bold"
+                                    href="/practica_clase11/tienda.html">Plantas</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-warning fs-6 fw-bold"
+                                    href="/practica_clase11/tienda.html">Macetas</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-warning fs-6 fw-bold"
+                                    href="/practica_clase11/tienda.html">Sustratos</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Introduce tu busqueda"
-                        aria-label="Search">
-                    <button class="btn btn-warning btn-warning-outline-success" type="submit">Buscar</button>
+                    <input class="form-control me-2 shadow-sm" type="search" placeholder="Introduce tu busqueda"
+                        aria-label="Search" />
+                    <button class="btn btn-warning btn-warning-outline-success" type="submit">
+                        Buscar
+                    </button>
                 </form>
             </div>
         </div>
     </nav>
     <!-- Carrusel -->
-   
+
     <div id="carouselExampleCaptions" class="carousel slide p-3">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -68,26 +88,32 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner carrusel">
             <div class="carousel-item active" data-bs-interval="3000">
-                <img src="./images/p1-interior.jpg" class="d-block w-100" alt="Planta de Interior...">
+                <img src="./images/p1-interior.jpg" class="d-block w-100" alt="Planta de Interior..." />
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="text-warning fs-3 fw-bold">Plantas de Interior</h5>
-                    <p class="text-warning">Contamos con una gran variedad de Plantas de Interior</p>
+                    <p class="text-warning-emphasis bg-white  rounded-pill fs-4">
+                        Contamos con una gran variedad de Plantas de Interior
+                    </p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="./images/s1-sustrato.jpg" class="d-block w-100" alt="Sustratos">
+                <img src="./images/s1-sustrato.jpg" class="d-block w-100" alt="Sustratos" />
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="text-warning fs-3 fw-bold">Sustratos</h5>
-                    <p class="text-warning">Contamos con una gran variedad de Sustratos Orgánicos</p>
+                    <p class="text-warning-emphasis bg-white  rounded-pill fs-4">
+                        Contamos con una gran variedad de Sustratos Orgánicos
+                    </p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="3000">
-                <img src="./images/m2-arbustos.jpg" class="d-block w-100" alt="Macetas">
+                <img src="./images/m2-arbustos.jpg" class="d-block w-100" alt="Macetas" />
                 <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-warning fs-3 fw-bold"">Macetas</h5>
-                    <p class="text-warning">Contamos con una gran variedad de Macetas</p>
+                    <h5 class="text-warning fs-3">Macetas</h5>
+                    <p class="text-warning-emphasis bg-white rounded-pill fs-4">
+                        Contamos con una gran variedad de Macetas
+                    </p>
                 </div>
             </div>
         </div>
@@ -102,11 +128,105 @@
             <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
-<section class="w-50 mx-auto text-center pt-5">
-    <h1 class="p-3 fs-2 border-top border-3"> <span class="text-warning">Vivero Online</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-    <p class="p-3 fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis laborum distinctio deserunt temporibus delectus atque, deleniti soluta nulla esse aliquam sequi nam quod modi sed minima, eveniet corrupti similique pariatur!</p>
-</section>
+    <!-- servicios -->
+    <section id="seccion-servicios" class="w-75 mx-auto text-center pt-4">
+        <h1 class="p-3 fs-3 border-top border-bottom border-3  border-warning">
+            <span class="text-warning"> <strong>Vivero Orange</strong></span>, lorem ipsum dolor sit
+            amet consectetur adipisicing elit.
+        </h1>
+        <p class="p-3 fs-5"> <em>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
+                laborum distinctio deserunt temporibus delectus atque, deleniti soluta
+                nulla esse aliquam sequi nam quod modi sed minima, eveniet corrupti
+                similique pariatur!
+            </em></p>
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md text-center">
+                <img src="http://via.placeholder.com/180x180" class="rounded-circle" alt="asesoramiento" />
+                <h3 class="text-warning mt-4 px-4 pb-1">Asesoramiento Profesional</h3>
+                <p class="px-4 text-body-secondary">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+                    mollitia asperiores qui! Minus ratione cum earum dolores, numquam a.
 
+                </p>
+            </div>
+            <div class="col-sm text-center">
+                <img src="http://via.placeholder.com/180x180" class="rounded-circle" alt="mantenimiento" />
+                <h3 class="text-warning mt-4 px-4 pb-1 ">Mantenimiento de Jardines</h3>
+                <p class="px-4 text-body-secondary">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+                    mollitia asperiores qui! Minus ratione cum earum dolores, numquam a.
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm text-center">
+                <img src="http://via.placeholder.com/180x180" class="rounded-circle" alt="alquiler" />
+                <h3 class="text-warning mt-4 px-4 pb-1">Alquiler de Plantas</h3>
+                <p class="px-4 text-body-secondary">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+                    mollitia asperiores qui! Minus ratione cum earum dolores, numquam a.
+
+                </p>
+            </div>
+            <div class="col-sm text-center">
+                <img src="http://via.placeholder.com/180x180" class="rounded-circle" alt="paisajismo" />
+                <h3 class="text-warning mt-4 px-4 pb-1">Diseño y Paisajismo</h3>
+                <p class="px-4 text-body-secondary">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+                    mollitia asperiores qui! Minus ratione cum earum dolores, numquam a.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="seccion-contacto">
+        <div id="bg-contacto" class="border-bottom border-warning border-2">
+        </div>
+        <div class="container">
+            <div>
+                <div class="pt-4">
+                    <h2 class="text-warning">Contacto</h2>
+                    <p>Obtené promociones y descuentos exclusivos</p>
+                </div>
+                <form action="">
+                    <div class="mb-3 shadow-sm rounded">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nombre@ejemplo.com" required />
+                    </div>
+                    <div class="mb-3 shadow-sm rounded">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="José Sanchez"
+                            required />
+                    </div>
+                    <div class="mb-3 shadow-sm rounded">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <div class="mb-3 rounded">
+                        <button type="button" class="btn btn-warning w-100 fs-6 text-white">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="w-100 bg-warning-subtle flex-column text-center">
+        <div id="iconos" class="fs-2 pt-2">
+            <a href="#"><i class="bi bi-twitter-x text-warning text-opacity-75"></i></a>
+            <a href="#"><i class="bi bi-facebook text-warning text-opacity-75"></i></a>
+            <a href="#"><i class="bi bi-instagram text-warning text-opacity-75"></i></a>
+        </div>
+        <div>
+            <p class="fs-5 px-3 pt-3 text-warning-emphasis">
+                Vivero Orange &copy; Todos los Derechos Reservados 2024
+            </p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

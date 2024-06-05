@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+
+footer {
+  min-height: 100px;
+}
+
+.name {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.envios {
+  background-image: url("images/Banner-Categoria-jardin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.envios p {
+  font-weight: bold;
+  text-align: center;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas: "infoVenta infoEnvio infoPostVenta";
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0.25rem;
+  margin: 0.25rem;
+}
+
+#grilla div{
+  border-radius:7px;
+  text-align: center;
+}
+
+#infoVenta {
+  grid-area: infoVenta;
+  background-image: linear-gradient(orange, white);
+}
+
+#infoEnvio {
+  grid-area: infoEnvio;
+  background-image: linear-gradient(orange, white);
+}
+
+#infoPostVenta {
+  grid-area: infoPostVenta;
+  background-image: linear-gradient(orange, white);
+}
+
+#grilla i{
+  color: rgb(131, 85, 0);
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+#grilla p{
+  font-weight: bold;
+  color: rgb(131, 85, 0);
+}
