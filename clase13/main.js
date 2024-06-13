@@ -1,6 +1,7 @@
 /*Intro JS
 //Hola Mundo desde archivo externo
 console.log("Hola Mundo");
+
 //Variables
 var nombre="Harry";
 console.log(nombre);
@@ -35,6 +36,12 @@ const ESPACIO= " ";
 let dni = parseInt(prompt("Ingrese su numero de documento sin puntos"));
 let datosCompletos =  "Su nombre es " + entrada + ESPACIO + ", su DNI es "+dni;
 alert(datosCompletos);
+
+let numero= parseInt(prompt("Ingrese un número"));
+const NUMEROB =30;
+
+let resultadoNumero= numero + NUMEROB;
+alert(resultadoNumero);
 
 //arrays unidimensionales indexados
 
@@ -72,10 +79,12 @@ console.log(colorMascotas[3][0].length)
         {nombre:"Juana",edad:32,profesion:"Desarrollador"}
     ];
 
-    console.log(empleados.length);*/
+    console.log(empleados.length);
+    console.log(empleados[1].nombre);
+
 let nombre = prompt("Ingrese su Nombre");
 let apellido = prompt("Ingrese su Apellido");
 let dni = parseInt(prompt("Ingrese su numero de documento sin puntos"));
 const ESPACIO = " ";
 let datosCompletos = "Su nombre es " + nombre + ESPACIO + apellido + ESPACIO + ", su DNI es " + dni;
-alert(datosCompletos);
+alert(datosCompletos);*/
