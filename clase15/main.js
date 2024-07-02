@@ -193,7 +193,7 @@ function mostrarLista() {
   console.log(listaSuper);
 }
 
-function verificaItems(listaSuper, nuevoItem) {
+function verificaItems(listaSuper, nuevoItem) {//MODIFICAR
   listaSuper.forEach((element) => {
     if (element === nuevoItem) {
       alert("El item ya incluido");
@@ -213,7 +213,7 @@ function seguir() {
   }
 }
 
-let listaSuper = ["LECHE"];
+let listaSuper = [];
 let nuevoItem;
 let seguirLista;
 
