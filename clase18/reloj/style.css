@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  align-items: center;
+}
+
+#reloj {
+  font-size: 3rem;
+  border: 3px solid gray;
+  border-radius: 10px;
+  color: rgb(138, 198, 200);
+  text-align: center;
+  font-family: monospace;
+  padding: 1rem;
+  margin: 20px;
+}
+
+#alternarFormato {
+  background-color: rgb(138, 198, 200);
+  padding: 0.5rem;
+  font-family: monospace;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}

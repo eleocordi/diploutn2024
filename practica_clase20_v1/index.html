@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <header>
+        <h2>Lista de Tareas del Equipo Alfa</h2>
+    </header>
+     <!-- Botones-->
+    <div class="botones">
+        <button id="mostrar-todas" class="btn">Todas las Tareas</button>
+        <button id="mostrar-completas" class="btn">Tareas Completas</button>
+        <button id="mostrar-pendientes" class="btn">Tareas Pendientes</button>
+        <div>
+        <label for="userId">Filtrar por Integrante:</label>
+        <input type="number" id="userId" name="userId" placeholder="Ingrese el número" min="1" max="20" />
+        <button id="mostrar-por-usuario" class="btn">OK</button>
+    </div>
+    </div>
+    <!-- Tabla-->
+    <table>
+        <thead>
+            <tr>
+                <th>Integrante</th>
+                <th>Id Tarea</th>
+                <th>Tarea Asignada</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="lista-tareas"></tbody>
+    </table>
+    <!-- Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Tarea</h2>
+            <label for="editUserId">Integrante Id</label>
+            <input type="number" id="editUserId" name="editUserId" min="1" max="20"><br><br>
+            <label for="editTitle">Tarea Asignada:</label>
+            <input type="text" id="editTitle" name="editTitle"><br><br>
+            <label for="editCompleted">Cambiar Estado: Completada/Pendiente</label>
+            <input type="checkbox" id="editCompleted" name="editCompleted"><br><br>
+            <button id="saveChanges">Guardar Cambios</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

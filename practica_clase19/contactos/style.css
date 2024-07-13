@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+ background-color: gray;
+display: flex;
+flex-wrap: wrap;
+flex-direction:row;
+justify-content: space-around;
+}
+
+div{
+background-color: aliceblue;
+padding: 2rem;
+margin: 1rem;
+width: 40%;
+height: auto;
+border-radius: 15px;
+text-align: center;
+}

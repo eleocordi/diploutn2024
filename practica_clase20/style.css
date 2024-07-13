@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(226, 221, 221);
+    font-family: sans-serif;
+}
+
+header {
+    background-color: lavender;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 10px;
+    box-shadow: 10px 10px 2px 1px rgba(75, 75, 249, 0.2);
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(155, 155, 248, 0.2);
+}
+
+
+btn:hover {
+    background-color:lavender;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+th,td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    font-size: xx-small;
+}
+
+th {
+    background-color: lavender;
+}
